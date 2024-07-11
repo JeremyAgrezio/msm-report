@@ -21,7 +21,8 @@ const config = {
 		}),
 		paths: {
 			//base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-			base: process.env.NODE_ENV === 'production' ? '/msm-report' : '/msm-report',
+			base: process.argv.includes('dev') ? '/msm-report' : '/msm-report'
+			//base: process.env.NODE_ENV === 'production' ? '/msm-report' : '/msm-report',
 		}
 	}
 };
