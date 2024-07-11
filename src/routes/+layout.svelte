@@ -1,6 +1,9 @@
 <script>
 	import Header from './Header.svelte';
+	import 'bootstrap/dist/css/bootstrap.min.css';
+  	import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 	import './styles.css';	
+	export const prerender = true;
 </script>
 
 <div class="app">
